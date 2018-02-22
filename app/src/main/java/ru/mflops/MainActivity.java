@@ -21,8 +21,6 @@ public class MainActivity extends Activity implements View.OnClickListener{
 
     @Override
     public void onClick(View view) {
-        Button b = new myRunnable(this, ++count);
-        ((LinearLayout) findViewById(R.id.lay)).addView(b);
-        new Thread((Runnable) b).start();
+        ((LinearLayout) findViewById(R.id.lay)).addView(new myRunnable(this, ++count));
     }
 }

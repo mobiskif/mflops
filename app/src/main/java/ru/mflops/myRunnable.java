@@ -19,9 +19,11 @@ public class myRunnable extends Button implements Runnable {
         id=i;
         h = new Handler() {
             public void handleMessage(android.os.Message msg) {
-                setText(id + ": " + msg.what + " MFlops");
+                //setText(id + ": " + msg.what + " MFlops");
+                setText(result);
             };
         };
+        new Thread(this).start();
     }
 
     @Override
@@ -37,7 +39,8 @@ public class myRunnable extends Button implements Runnable {
             catch (InterruptedException e) {}
             result = id + ": " + String.format("%.2f", value) + " MFLOPS  " + String.format("%.2f", time) + " ms";
             //Log.d("jop", result);
-            h.sendEmptyMessage(Math.round(value));
+            //h.sendEmptyMessage(Math.round(value));
+            h.sendEmptyMessage(0);
         }
     }
 }
