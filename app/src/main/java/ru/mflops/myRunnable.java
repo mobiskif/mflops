@@ -3,11 +3,13 @@ package ru.mflops;
 import android.content.Context;
 import android.os.Handler;
 import android.util.Log;
+import android.view.View;
 import android.widget.Button;
 
-public class myRunnable extends Button implements Runnable {
+public class myRunnable extends Button implements Runnable, View.OnClickListener {
     int id=0;
     String result = "";
+    boolean started=true;
     Handler h;
 
     public myRunnable(Context c, int i) {
@@ -19,12 +21,13 @@ public class myRunnable extends Button implements Runnable {
                 setText(result);
             };
         };
+        setOnClickListener(this);
         new Thread(this).start();
     }
 
     @Override
     public void run() {
-        while (true) {
+        while (started) {
             float X = 0.0F;
             long t1 = System.currentTimeMillis();
             for (long i = 0; i < 1000000; i++) X = 6.345F*3.1415F;
@@ -36,5 +39,11 @@ public class myRunnable extends Button implements Runnable {
             result = id + ": " + String.format("%.2f", value) + " MFLOPS  " + String.format("%.2f", time) + " ms";
             h.sendEmptyMessage(0);
         }
+    }
+
+    @Override
+    public void onClick(View view) {
+        started=!started;
+        if (started) new Thread(this).start();
     }
 }
