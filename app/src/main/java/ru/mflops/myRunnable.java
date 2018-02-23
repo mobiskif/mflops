@@ -8,7 +8,7 @@ import android.widget.Button;
 
 public class myRunnable extends Button implements Runnable, View.OnClickListener {
     int id=0;
-    String result = "";
+    float result = 0;
     boolean started=true;
     Handler h;
 
@@ -18,7 +18,7 @@ public class myRunnable extends Button implements Runnable, View.OnClickListener
         h = new Handler() {
             public void handleMessage(android.os.Message msg) {
                 //setText(id + ": " + msg.what + " MFlops");
-                setText(result);
+                setText(String.valueOf(result));
             };
         };
         setOnClickListener(this);
@@ -36,7 +36,8 @@ public class myRunnable extends Button implements Runnable, View.OnClickListener
             float value = 1000/time;
             //try { Thread.sleep(2000); }
             //catch (InterruptedException e) {}
-            result = id + ": " + String.format("%.2f", value) + " MFLOPS  " + String.format("%.2f", time) + " ms";
+            //result = id + ": " + String.format("%.2f", value) + " MFLOPS  " + String.format("%.2f", time) + " ms";
+            result = value;
             h.sendEmptyMessage(0);
         }
     }
