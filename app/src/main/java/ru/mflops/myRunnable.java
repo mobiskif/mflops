@@ -5,10 +5,6 @@ import android.os.Handler;
 import android.util.Log;
 import android.widget.Button;
 
-/**
- * Created by user on 21.02.2018.
- */
-
 public class myRunnable extends Button implements Runnable {
     int id=0;
     String result = "";
@@ -31,15 +27,13 @@ public class myRunnable extends Button implements Runnable {
         while (true) {
             float X = 0.0F;
             long t1 = System.currentTimeMillis();
-            for (long i = 0; i < 1000000; i++) X = i*3.1415F;
+            for (long i = 0; i < 1000000; i++) X = 6.345F*3.1415F;
             long t2 = System.currentTimeMillis();
-            float time=  (t2-t1);
+            float time = t2-t1;
             float value = 1000/time;
-            try { Thread.sleep(2000); }
-            catch (InterruptedException e) {}
+            //try { Thread.sleep(2000); }
+            //catch (InterruptedException e) {}
             result = id + ": " + String.format("%.2f", value) + " MFLOPS  " + String.format("%.2f", time) + " ms";
-            //Log.d("jop", result);
-            //h.sendEmptyMessage(Math.round(value));
             h.sendEmptyMessage(0);
         }
     }

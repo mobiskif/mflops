@@ -22,5 +22,6 @@ public class MainActivity extends Activity implements View.OnClickListener{
     @Override
     public void onClick(View view) {
         ((LinearLayout) findViewById(R.id.lay)).addView(new myRunnable(this, ++count));
+        ((Button) findViewById(R.id.button)).setText(count+" потоков");
     }
 }
