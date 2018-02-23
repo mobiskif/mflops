@@ -2,49 +2,34 @@ package ru.mflops;
 
 import android.content.Context;
 import android.os.Handler;
-import android.util.Log;
-import android.view.View;
 import android.widget.Button;
 
-public class myRunnable extends Button implements Runnable, View.OnClickListener {
-    int id=0;
-    float result = 0;
-    boolean started=true;
-    Handler h;
+public class myRunnable extends Button implements Runnable {
+    float result = 0F;
+    Handler handler;
 
-    public myRunnable(Context c, int i) {
+    public myRunnable(Context c) {
         super(c);
-        id=i;
-        h = new Handler() {
+        handler = new Handler() {
             public void handleMessage(android.os.Message msg) {
-                //setText(id + ": " + msg.what + " MFlops");
                 setText(String.valueOf(result));
             };
         };
-        setOnClickListener(this);
         new Thread(this).start();
     }
 
     @Override
     public void run() {
-        while (started) {
-            float X = 0.0F;
+        while (true) {
             long t1 = System.currentTimeMillis();
-            for (long i = 0; i < 1000000; i++) X = 6.345F*3.1415F;
+            for (long i = 0; i < 1000000; i++) {float x =6.345F*3.1415F;}
             long t2 = System.currentTimeMillis();
             float time = t2-t1;
             float value = 1000/time;
-            //try { Thread.sleep(2000); }
-            //catch (InterruptedException e) {}
-            //result = id + ": " + String.format("%.2f", value) + " MFLOPS  " + String.format("%.2f", time) + " ms";
+            //result = String.format("%.2f", value);
             result = value;
-            h.sendEmptyMessage(0);
+            handler.sendEmptyMessage(0);
         }
     }
 
-    @Override
-    public void onClick(View view) {
-        started=!started;
-        if (started) new Thread(this).start();
-    }
 }
