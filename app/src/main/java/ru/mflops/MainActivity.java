@@ -13,7 +13,7 @@ import android.widget.TextView;
 import java.util.ArrayList;
 import java.util.function.Consumer;
 
-public class MainActivity extends Activity implements View.OnClickListener{
+public class MainActivity extends Activity implements View.OnClickListener {
     LinearLayout lay;
     ArrayList buttons;
 
@@ -28,31 +28,29 @@ public class MainActivity extends Activity implements View.OnClickListener{
 
     @Override
     public void onClick(View view) {
-        if (view.getId()==R.id.btnplus) {
+        if (view.getId() == R.id.btnplus) {
             myRunnable mr = new myRunnable(this);
             buttons.add(mr);
             lay.addView(mr);
         }
-        if (view.getId()==R.id.btnminus) {
-            if (buttons.size() > 0) {
-                lay.removeViewAt(buttons.size()-1);
-                buttons.remove(buttons.size()-1);
-            }
+        if (view.getId() == R.id.btnminus && buttons.size() > 0) {
+            ((myRunnable) buttons.get(buttons.size() - 1)).stop();
+            lay.removeViewAt(buttons.size() - 1);
+            buttons.remove(buttons.size() - 1);
         }
-        if (view.getId()==R.id.btnn) {
+        if (view.getId() == R.id.btnn) {
             ((TextView) findViewById(R.id.tvInfo)).setText(getSummaryValue());
         }
 
     }
 
     String getSummaryValue() {
-        float res=0;
-        for (Object o:buttons) {
-            myRunnable mr = (myRunnable) o;
-            String vs = String.valueOf(mr.getText());
-            res +=Float.valueOf(vs);
+        float res = 0;
+        for (Object o : buttons) {
+            String vs = String.valueOf(((myRunnable) o).getText());
+            res += Float.valueOf(vs);
         }
-        return buttons.size()+" "+ String.valueOf(res);
+        return buttons.size() + ": " + String.valueOf(res);
     }
-    
+
 }

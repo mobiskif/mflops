@@ -7,6 +7,7 @@ import android.widget.Button;
 public class myRunnable extends Button implements Runnable {
     float result = 0F;
     Handler handler;
+    boolean isrun=true;
 
     public myRunnable(Context c) {
         super(c);
@@ -20,7 +21,7 @@ public class myRunnable extends Button implements Runnable {
 
     @Override
     public void run() {
-        while (true) {
+        while (isrun) {
             long t1 = System.currentTimeMillis();
             for (long i = 0; i < 1000000; i++) {float x =6.345F*3.1415F;}
             long t2 = System.currentTimeMillis();
@@ -31,5 +32,7 @@ public class myRunnable extends Button implements Runnable {
             handler.sendEmptyMessage(0);
         }
     }
-
+    public void stop() {
+        isrun=false;
+    }
 }
