@@ -29,7 +29,7 @@ public class Adapter_StringArray extends RecyclerView.Adapter {
 
     @Override
     public void onBindViewHolder(@NonNull RecyclerView.ViewHolder holder, int position) {
-        ((TextView) holder.itemView.findViewById(R.id.textView)).setText(mDataset[position]);
+        ((TextView) holder.itemView.findViewById(R.id.f1)).setText(mDataset[position]);
     }
 
     @Override

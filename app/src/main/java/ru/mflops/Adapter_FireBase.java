@@ -17,11 +17,12 @@ import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.QuerySnapshot;
 
 import java.util.ArrayList;
+import java.util.Map;
 
 public class Adapter_FireBase extends RecyclerView.Adapter {
     ArrayList datas = new ArrayList();
     RecyclerView mRecyclerView;
-    String TAG ="jop";
+    String TAG = "jop";
 
     public static class ViewHolder extends RecyclerView.ViewHolder {
         public ViewHolder(View v) {
@@ -30,12 +31,8 @@ public class Adapter_FireBase extends RecyclerView.Adapter {
     }
 
     public Adapter_FireBase(RecyclerView d) {
-        mRecyclerView=d;
-
-
+        mRecyclerView = d;
         FirebaseFirestore db = FirebaseFirestore.getInstance();
-
-
         db.collection("users")
                 .get()
                 .addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
@@ -43,7 +40,8 @@ public class Adapter_FireBase extends RecyclerView.Adapter {
                     public void onComplete(@NonNull Task<QuerySnapshot> task) {
                         if (task.isSuccessful()) {
                             for (DocumentSnapshot document : task.getResult()) {
-                                Log.d(TAG, document.getId() + " => " + document.getData());
+                                Map m = document.getData();
+                                Log.d(TAG, document.getId() + " => " + m);
                                 datas.add(document.getData());
                                 //mRecyclerView.getAdapter().notifyDataSetChanged();
                             }
@@ -55,7 +53,7 @@ public class Adapter_FireBase extends RecyclerView.Adapter {
                 .addOnSuccessListener(new OnSuccessListener<QuerySnapshot>() {
                     @Override
                     public void onSuccess(QuerySnapshot documentSnapshots) {
-                        Log.d(TAG,"=======");
+                        Log.d(TAG, "=======");
                         mRecyclerView.getAdapter().notifyDataSetChanged();
                     }
                 });
@@ -88,7 +86,10 @@ public class Adapter_FireBase extends RecyclerView.Adapter {
 
     @Override
     public void onBindViewHolder(@NonNull RecyclerView.ViewHolder holder, int position) {
-        ((TextView) holder.itemView.findViewById(R.id.textView)).setText(datas.get(position).toString());
+        Map m = (Map) datas.get(position);
+        ((TextView) holder.itemView.findViewById(R.id.f1)).setText(m.get("born").toString());
+        ((TextView) holder.itemView.findViewById(R.id.f2)).setText(m.get("first").toString());
+        ((TextView) holder.itemView.findViewById(R.id.f3)).setText(m.get("last").toString());
     }
 
     @Override
