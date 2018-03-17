@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "274030900321",
+    "firebase_url": "https://mflops-8ec61.firebaseio.com",
+    "project_id": "mflops-8ec61",
+    "storage_bucket": "mflops-8ec61.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:274030900321:android:8aa506c77681a909",
+        "android_client_info": {
+          "package_name": "ru.mflops"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "274030900321-4n83focpjh1hqdn96a6g704dplqts91t.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "ru.mflops",
+            "certificate_hash": "7298cf5af282549b3b2672a2c67a38637c606bb6"
+          }
+        },
+        {
+          "client_id": "274030900321-c1l7dhleh5echriqe60f43jc98uqbkfh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBqbg5ji9eVjZS62fhFeJH-RQGkpj5b8Cs"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "274030900321-c1l7dhleh5echriqe60f43jc98uqbkfh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
