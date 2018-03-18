@@ -14,7 +14,7 @@ public class myRunnable extends Button implements Runnable {
         handler = new Handler() {
             public void handleMessage(android.os.Message msg) {
                 setText(String.valueOf(result));
-            };
+            }
         };
         new Thread(this).start();
     }
@@ -26,9 +26,8 @@ public class myRunnable extends Button implements Runnable {
             for (long i = 0; i < 1000000; i++) {float x =6.345F*3.1415F;}
             long t2 = System.currentTimeMillis();
             float time = t2-t1;
-            float value = 1000/time;
             //result = String.format("%.2f", value);
-            result = value;
+            result = 1000/time;
             handler.sendEmptyMessage(0);
         }
     }
