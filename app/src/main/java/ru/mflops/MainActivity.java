@@ -3,6 +3,7 @@ package ru.mflops;
 import android.app.Activity;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
+import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
@@ -27,7 +28,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
         setContentView(R.layout.activity_main);
 
         mRecyclerView = findViewById(R.id.recycler_view);
-        mRecyclerView.setLayoutManager(new LinearLayoutManager(this));
+        mRecyclerView.setLayoutManager(new GridLayoutManager(this,2));
         //mAdapter = new Adapter_StringArray(getResources().getStringArray(R.array.areas));
         mAdapter = new Adapter_FireBase(mRecyclerView);
         mRecyclerView.setAdapter(mAdapter);
