@@ -5,33 +5,30 @@ import android.os.Handler;
 import android.widget.Button;
 
 public class myRunnable extends Button implements Runnable {
-    float result = 0F;
-    Handler handler;
-    boolean isrun=true;
+    private float result = 0F;
+    private final Handler handler;
 
     public myRunnable(Context c) {
         super(c);
+        setText("==");
+
         handler = new Handler() {
             public void handleMessage(android.os.Message msg) {
-                setText(String.valueOf(result));
+                setText(String.format("%.2f", result));
             }
         };
+
         new Thread(this).start();
     }
 
     @Override
     public void run() {
-        while (isrun) {
+        while (true) {
             long t1 = System.currentTimeMillis();
-            for (long i = 0; i < 1000000; i++) {float x =6.345F*3.1415F;}
+            for (long i = 0; i < 1000000; i++) {result = 6.345F * 3.1415F;}
             long t2 = System.currentTimeMillis();
-            float time = t2-t1;
-            //result = String.format("%.2f", value);
-            result = 1000/time;
+            result = 1000/(t2-t1);
             handler.sendEmptyMessage(0);
         }
-    }
-    public void stop() {
-        isrun=false;
     }
 }

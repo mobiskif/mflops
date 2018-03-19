@@ -6,6 +6,7 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.google.firebase.firestore.DocumentSnapshot;
@@ -14,12 +15,9 @@ import com.google.firebase.firestore.FirebaseFirestore;
 import java.util.ArrayList;
 import java.util.Map;
 
-import static android.support.v7.widget.RecyclerView.*;
-
-public class Adapter_FireBase extends Adapter {
-    ArrayList datas = new ArrayList();
-    RecyclerView mRecyclerView;
-    String TAG = "jop";
+class Adapter_FireBase extends RecyclerView.Adapter {
+    private final ArrayList datas = new ArrayList();
+    private final String TAG = "jop";
 
     public static class ViewHolder extends RecyclerView.ViewHolder {
         public ViewHolder(View v) {
@@ -27,8 +25,8 @@ public class Adapter_FireBase extends Adapter {
         }
     }
 
-    public Adapter_FireBase(RecyclerView d) {
-        mRecyclerView = d;
+    public Adapter_FireBase() {
+        //mRecyclerView = d;
         FirebaseFirestore db = FirebaseFirestore.getInstance();
         db.collection("users")
                 .get()
@@ -41,32 +39,8 @@ public class Adapter_FireBase extends Adapter {
                         Log.w(TAG, "Error getting documents.", task.getException());
                     }
                 })
-                .addOnSuccessListener(documentSnapshots -> mRecyclerView.getAdapter().notifyDataSetChanged());
-
-    }
-
-    @NonNull
-    @Override
-    public RecyclerView.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View v = LayoutInflater.from(parent.getContext()).inflate(R.layout.holder, parent, false);
-        return new ViewHolder(v);
-    }
-
-    @Override
-    public void onBindViewHolder(@NonNull RecyclerView.ViewHolder holder, int position) {
-        Map m = (Map) datas.get(position);
-        ((TextView) holder.itemView.findViewById(R.id.f1)).setText(m.get("born").toString());
-        ((TextView) holder.itemView.findViewById(R.id.f2)).setText(m.get("first").toString());
-        ((TextView) holder.itemView.findViewById(R.id.f3)).setText(m.get("last").toString());
-    }
-
-    @Override
-    public int getItemCount() {
-        return datas.size();
-    }
-
-
-    void firestore() {
+                //.addOnSuccessListener(documentSnapshots -> mRecyclerView.getAdapter().notifyDataSetChanged());
+                .addOnSuccessListener(documentSnapshots -> notifyDataSetChanged());
 /*
         // Create a new user with a first and last name
         Map<String, Object> user = new HashMap<>();
@@ -91,6 +65,27 @@ public class Adapter_FireBase extends Adapter {
                 });
 */
 
+    }
+
+    @NonNull
+    @Override
+    public RecyclerView.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+        View v = LayoutInflater.from(parent.getContext()).inflate(R.layout.holder, parent, false);
+        ((LinearLayout) v.findViewById(R.id.llv)).addView(new myRunnable(parent.getContext()));
+        return new ViewHolder(v);
+    }
+
+    @Override
+    public void onBindViewHolder(@NonNull RecyclerView.ViewHolder holder, int position) {
+        Map m = (Map) datas.get(position);
+        ((TextView) holder.itemView.findViewById(R.id.f1)).setText(m.get("born").toString());
+        ((TextView) holder.itemView.findViewById(R.id.f2)).setText(m.get("first").toString());
+        ((TextView) holder.itemView.findViewById(R.id.f3)).setText(m.get("last").toString());
+    }
+
+    @Override
+    public int getItemCount() {
+        return datas.size();
     }
 
 }
