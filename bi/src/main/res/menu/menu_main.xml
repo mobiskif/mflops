@@ -5,23 +5,22 @@
     <item
         android:id="@+id/settings"
         android:orderInCategory="100"
-        app:showAsAction="never"
-        android:title="Settings" />
+        android:title="Settings"
+        />
 
     <item
         android:id="@+id/load"
         android:orderInCategory="200"
         android:title="Load"
-        app:showAsAction="never" />
+        />
     <item
         android:id="@+id/save"
         android:orderInCategory="300"
         android:title="Save"
-        app:showAsAction="never" />
+        />
 
     <item
         android:id="@+id/exit"
         android:orderInCategory="400"
-        app:showAsAction="never"
         android:title="Exit" />
 </menu>

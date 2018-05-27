@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "1012953917989",
+    "firebase_url": "https://mobiskifm.firebaseio.com",
+    "project_id": "mobiskifm",
+    "storage_bucket": "mobiskifm.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1012953917989:android:638223c44a474e87",
+        "android_client_info": {
+          "package_name": "ru.mobiskif.bi"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1012953917989-gu6p58fj8sph9o62n32l0mp1fkcbragu.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "1012953917989-gu6p58fj8sph9o62n32l0mp1fkcbragu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCK43E5x8nS9Ct4esytGVWto8bXQRJZQ0Y"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
