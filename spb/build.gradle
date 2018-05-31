@@ -5,20 +5,21 @@ android {
         sign1 {
             keyAlias 'key0'
             keyPassword 'router1966'
-            storeFile file('/home/john/StudioProjects/Healthy_ANDROID/keystore.jks')
+            storeFile file('/home/john/StudioProjects/mobiskif/keys/deployment_cert.der')
             storePassword 'router1966'
         }
     }
     compileSdkVersion 27
     defaultConfig {
-        applicationId 'ru.mobiskif.bi'
+        applicationId 'ru.mobiskif.spb'
         minSdkVersion 22
         targetSdkVersion 27
-        versionCode 223
+        versionCode 1
         versionName 'vn'
         //testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
         dimension 'tier'
         signingConfig signingConfigs.sign1
+        versionNameSuffix 'vns'
     }
     buildTypes {
         release {
