@@ -1,0 +1,25 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.n3.healthy.MainActivity">
+
+    <item
+        android:id="@+id/settings"
+        android:orderInCategory="100"
+        android:title="Settings"
+        />
+    <item
+        android:id="@+id/load"
+        android:orderInCategory="200"
+        android:title="Load"
+        />
+    <item
+        android:id="@+id/save"
+        android:orderInCategory="300"
+        android:title="Save"
+        />
+    <item
+        android:id="@+id/exit"
+        android:orderInCategory="400"
+        android:title="Exit" />
+</menu>

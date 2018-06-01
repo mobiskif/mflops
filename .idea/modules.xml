@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/bi/bi.iml" filepath="$PROJECT_DIR$/bi/bi.iml" />
       <module fileurl="file://$PROJECT_DIR$/mobiskif.iml" filepath="$PROJECT_DIR$/mobiskif.iml" />
       <module fileurl="file://$PROJECT_DIR$/spb/spb.iml" filepath="$PROJECT_DIR$/spb/spb.iml" />
     </modules>
