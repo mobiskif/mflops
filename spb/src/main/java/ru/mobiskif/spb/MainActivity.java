@@ -44,14 +44,16 @@ public class MainActivity extends Activity implements View.OnClickListener {
             //startActivityForResult(new Intent(this, SettingsActivity.class),0);
             return true;
         }
+        /*
         else if (id == R.id.load) {
-            selectFile("*/*");
+            selectFile("*//*");
             return true;
         }
         else if (id == R.id.save) {
             saveBase();
             return true;
         }
+        */
         return super.onOptionsItemSelected(item);
     }
 
