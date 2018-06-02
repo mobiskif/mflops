@@ -9,9 +9,9 @@
         android:title="Settings"
         />
     <item
-        android:id="@+id/load"
+        android:id="@+id/loadfromfile"
         android:orderInCategory="200"
-        android:title="Load"
+        android:title="LoadFromFile"
         />
     <item
         android:id="@+id/save"
@@ -22,4 +22,9 @@
         android:id="@+id/exit"
         android:orderInCategory="400"
         android:title="Exit" />
+    <item
+        android:id="@+id/loadfrombase"
+        android:orderInCategory="250"
+        android:title="LoadFromBase"
+        />
 </menu>

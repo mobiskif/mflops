@@ -22,16 +22,16 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
 public class MainActivity extends Activity {
     //GoogleSpeech tts;
-    ArrayList fileContent = new ArrayList();
-    ArrayList datas = new ArrayList();
-    String headers = "A,B,C";
-    String baseName = "bi";
+    List<DataEntry> contentOfCSVFile;
+    String[] headersOfCSVFile = {"first","last","born"};
+    String BASE_NAME = "bi";
+    int SELECT_FILE_DIALOG = 1;
+    private String CSV_SEPARATOR = ",";
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -41,52 +41,52 @@ public class MainActivity extends Activity {
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        int id = item.getItemId();
-
-        if (id == R.id.exit) {
+        if (item.getItemId() == R.id.exit) {
             finish();
             return true;
-        } else if (id == R.id.settings) {
-            //startActivityForResult(new Intent(this, SettingsActivity.class),0);
+        } else if (item.getItemId() == R.id.loadfromfile) {
+            startSelectFileDialog("*/*");
             return true;
-        } else if (id == R.id.load) {
-            loadFromFile("*/*");
+        } else if (item.getItemId() == R.id.loadfrombase) {
+            contentOfCSVFile = loadFromFireBase(BASE_NAME);
             return true;
-        } else if (id == R.id.save) {
-            saveToBase();
+        } else if (item.getItemId() == R.id.save) {
+            saveToFireBase(BASE_NAME);
             return true;
         }
-
         return super.onOptionsItemSelected(item);
     }
 
-    private void saveToBase() {
+    void saveToFireBase(String basename) {
+        /*
         FirebaseFirestore db = FirebaseFirestore.getInstance();
         Map<String, Object> user = new HashMap<>();
 
-        String[] heads = headers.split(",");
+        String[] heads = headersOfCSVFile.split(",");
         for (Object row : fileContent) {
             String[] cols = (row.toString()).split(",");
             for (int i = 0; i < cols.length; i++) {
                 user.put(heads[i], cols[i]);
                 Log.d("jop", heads[i] + " = " + cols[i]);
             }
-            db.collection(baseName).add(user);
+            db.collection(BASE_NAME).add(user);
             Log.d("jop", "Отправлена строка: " + row);
         }
-
+*/
     }
 
-    void loadFromBase() {
+    List<DataEntry> loadFromFireBase(String baseName) {
+        List<DataEntry> result = new ArrayList<>();
         FirebaseFirestore db = FirebaseFirestore.getInstance();
-        //db.collection("users")
         db.collection(baseName)
                 .get()
                 .addOnCompleteListener(task -> {
                     if (task.isSuccessful()) {
                         for (DocumentSnapshot document : task.getResult()) {
                             Log.d("jop", String.valueOf(document.getData().toString()));
-                            datas.add(document.getData());
+                            Map<String, Object> row = document.getData();
+                            NameValueDataEntry dataEntry = new NameValueDataEntry(row.get(headersOfCSVFile[0]).toString(), row.get(headersOfCSVFile[1]).toString(), Integer.valueOf(row.get(headersOfCSVFile[2]).toString()));
+                            result.add(dataEntry);
                         }
                     } else {
                         Log.d("jop", "Error getting documents.", task.getException());
@@ -94,82 +94,60 @@ public class MainActivity extends Activity {
                 })
                 //.addOnSuccessListener(documentSnapshots -> mRecyclerView.getAdapter().notifyDataSetChanged());
                 .addOnSuccessListener(documentSnapshots -> prepareCharts());
+        return result;
 
     }
 
-    private void loadFromFile(String type) {
+    void startSelectFileDialog(String type) {
         Intent intent = new Intent(Intent.ACTION_OPEN_DOCUMENT);
         intent.addCategory(Intent.CATEGORY_OPENABLE);
         intent.setType(type);
-        startActivityForResult(intent, 1);
+        startActivityForResult(intent, SELECT_FILE_DIALOG);
     }
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         if (resultCode == RESULT_OK) {
-            if (requestCode == 1 && data != null) {
-                fileContent = new ArrayList<>();
-
-                try {
-                    FileDescriptor fd = this
-                            .getContentResolver()
-                            .openFileDescriptor(data.getData(), "r")
-                            .getFileDescriptor();
-                    BufferedReader reader = new BufferedReader(
-                            new InputStreamReader(
-                                    new FileInputStream(fd)
-                            )
-                    );
-                    try {
-                        String line;
-                        while ((line = reader.readLine()) != null) {
-                            fileContent.add(line);
-                        }
-                    } catch (IOException e) {
-                        // log error
-                    }
-                    headers = fileContent.get(0).toString();
-                    fileContent.remove(0);
-                    prepareCharts();
-                } catch (IOException e) {
-                    //
-                }
+            if (requestCode == SELECT_FILE_DIALOG && data != null) {
+                contentOfCSVFile = loadFromCSVFile(data);
+                prepareCharts();
             }
         }
     }
 
-    List getData(ArrayList<String> content) {
-        List<DataEntry> data = new ArrayList<>();
-        for (Object row : content) {
-            String[] cells = (row.toString()).split(",");
-            Log.d("jop", cells[1]);
-            data.add(new NameValueDataEntry(cells[0], cells[1], Integer.valueOf(cells[2])));
+    List<DataEntry> loadFromCSVFile(Intent intent) {
+        List<DataEntry> result = new ArrayList<>();
+        try {
+            FileDescriptor fd = this
+                    .getContentResolver()
+                    .openFileDescriptor(intent.getData(), "r")
+                    .getFileDescriptor();
+            BufferedReader reader =
+                    new BufferedReader(
+                            new InputStreamReader(
+                                    new FileInputStream(fd)
+                            )
+                    );
+            String line;
+            while ((line = reader.readLine()) != null) {
+                String[] cols = line.split(CSV_SEPARATOR);
+                NameValueDataEntry dataEntry = new NameValueDataEntry(cols[0], cols[1], Integer.valueOf(cols[2]));
+                result.add(dataEntry);
+            }
         }
-        return data;
+        catch (IOException e) {}
+        return result;
+
     }
 
-    List getData2(ArrayList content) {
-        List<DataEntry> data = new ArrayList<>();
-        for (Object row : content) {
-            //String[] cells = (row.toString()).split(",");
-            Log.d("jop", row.toString());
-            Map<String, Object> user = (Map<String, Object>) row;
-            Log.d("jop", user.get("last").toString());
-
-            data.add(new NameValueDataEntry( user.get("first").toString(), user.get("last").toString(), Integer.valueOf(user.get("born").toString()) ));
-        }
-        return data;
-    }
 
     void prepareCharts() {
         AnyChartView anyChartView1 = findViewById(R.id.any_chart_view1);
         AnyChartView anyChartView2 = findViewById(R.id.any_chart_view2);
         Venn chart1 = AnyChart.venn();
         Pie chart2 = AnyChart.pie();
-        //List<DataEntry> data = getData(fileContent);
-        List<DataEntry> data = getData2(datas);
-        chart1.setData(data);
-        chart2.setData(data);
+        chart1.setData(contentOfCSVFile);
+        chart2.setData(contentOfCSVFile);
         anyChartView1.setChart(chart1);
         anyChartView2.setChart(chart2);
     }
@@ -178,8 +156,6 @@ public class MainActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        loadFromBase();
-        //prepareCharts();
     }
 
 }
