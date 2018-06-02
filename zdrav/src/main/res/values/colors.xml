@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+
+    <color name="white">#FFFFFF</color>
+    <color name="button_grey">#757575</color>
+
+    <!--
+        <color name="primaryColor">#2962ff</color>
+        <color name="primaryLightColor">#768fff</color>
+        <color name="primaryDarkColor">#0039cb</color>
+        <color name="primaryTextColor">#ffffff</color>
+    -->
+    <color name="primaryColor">#0277bd</color>
+    <color name="primaryLightColor">#58a5f0</color>
+    <color name="primaryDarkColor">#004c8c</color>
+</resources>

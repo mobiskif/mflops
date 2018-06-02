@@ -1,0 +1,66 @@
+apply plugin: 'com.android.application'
+
+allprojects {
+    repositories {
+        maven { url "https://maven.google.com" }
+    }
+}
+
+android {
+    compileSdkVersion 27
+    buildToolsVersion '27.0.3'
+    flavorDimensions "default"
+
+    signingConfigs {
+        sign1 {
+            storeFile file('/home/john/Рабочий стол/keys/keystore.jks')
+            keyAlias 'key0'
+            keyPassword 'router1966'
+            storePassword 'router1966'
+        }
+    }
+
+    defaultConfig {
+        applicationId 'ru.mobiskif.zdrav'
+        minSdkVersion 15
+        targetSdkVersion 27
+        versionCode 45
+        versionName '45'
+        vectorDrawables.useSupportLibrary = true
+    }
+
+    productFlavors {
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    //implementation 'com.google.firebase:firebase-crash:11.0.4'
+    //implementation 'com.google.firebase:firebase-core:11.0.4'
+    //implementation 'com.google.firebase:firebase-appindexing:11.0.4'
+    //implementation 'com.google.firebase:firebase-messaging:11.0.4'
+    //implementation 'com.google.firebase:firebase-config:11.0.4'
+    //implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+    //implementation 'com.google.android.gms:play-services-maps:11.0.4'
+    implementation 'com.google.android.gms:play-services-maps:7.5.0'
+    implementation 'com.android.support:appcompat-v7:26.1.0'
+    implementation 'com.android.support:design:26.1.0'
+    implementation 'com.android.support:cardview-v7:26.1.0'
+    implementation 'com.android.support:recyclerview-v7:26.1.0'
+    //implementation 'com.google.firebase:firebase-core:11.8.0'
+}
+
+//apply plugin: 'com.google.gms.google-services'
+
+
+//apply plugin: 'com.google.gms.google-services'

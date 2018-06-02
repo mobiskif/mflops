@@ -10,6 +10,7 @@
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/bi" />
             <option value="$PROJECT_DIR$/spb" />
+            <option value="$PROJECT_DIR$/zdrav" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />

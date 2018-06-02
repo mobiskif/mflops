@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="ru.healthy">
+
+    <application
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme.Base"
+        android:icon="@drawable/redcross_small"
+        android:allowBackup="true"
+        android:supportsRtl="false"
+        android:fullBackupContent="@xml/backup_descriptor">
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyCh8b61hoFM4ywSwiYmhhWcmNEob6krN8E" />
+
+        <activity
+            android:name="ru.mobiskif.zdrav.Activity_0_UA"
+            android:label="@string/menu0"
+            android:parentActivityName="ru.mobiskif.zdrav.Activity_1_ULH"/>
+        <activity
+            android:name="ru.mobiskif.zdrav.Activity_6_help"
+            android:label="@string/menu1"
+            android:parentActivityName="ru.mobiskif.zdrav.Activity_1_ULH"/>
+        <activity
+            android:name="ru.mobiskif.zdrav.Activity_1_ULH"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="api.netrika.ru"
+                    android:pathPattern="/healthy"
+                    android:scheme="http" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="ru.mobiskif.zdrav.Activity_2_LSD"
+            android:label="@string/menu2"
+            android:parentActivityName="ru.mobiskif.zdrav.Activity_1_ULH"/>
+        <activity
+            android:name="ru.mobiskif.zdrav.Activity_3_DRT"
+            android:label="@string/menu3"
+            android:parentActivityName="ru.mobiskif.zdrav.Activity_2_LSD"/>
+        <activity
+            android:name="ru.mobiskif.zdrav.Activity_4_MAP"
+            android:label="@string/menu4"/>
+        <activity
+            android:name="ru.mobiskif.zdrav.Activity_5_YN"
+            android:theme="@style/Theme.AppCompat.Dialog"
+            android:label="@string/menu5" />
+        <activity
+            android:name="ru.mobiskif.zdrav.ActivityBase" />
+
+    </application>
+
+</manifest>

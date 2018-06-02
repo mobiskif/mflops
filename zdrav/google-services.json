@@ -1,0 +1,75 @@
+{
+  "project_info": {
+    "project_number": "260263158233",
+    "firebase_url": "https://mobiskif-gorzdrav.firebaseio.com",
+    "project_id": "mobiskif-gorzdrav",
+    "storage_bucket": "mobiskif-gorzdrav.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:260263158233:android:44b69e6dd23c3557",
+        "android_client_info": {
+          "package_name": "ru.healthy"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "260263158233-86jcs9kiniu4j3bm7gjdj0bpnns3n2kh.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "ru.healthy",
+            "certificate_hash": "94888a33d59943949279f14a0e296eccedbcd4d4"
+          }
+        },
+        {
+          "client_id": "260263158233-akms7e1uv5ttf3qf09h88d7967t0b7o7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "ru.healthy",
+            "certificate_hash": "33a4c6a30c772c3921793aede0e1169e2bca7628"
+          }
+        },
+        {
+          "client_id": "260263158233-f8o32etom6c43aniclgcsms7mnaaum6d.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "ru.healthy",
+            "certificate_hash": "b303877aefbf3adbe7a7974cd9f9b804e95dc6e8"
+          }
+        },
+        {
+          "client_id": "260263158233-h8ok5rarhet3ujsa12tokfc2u5ldeecb.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "260263158233-h8ok5rarhet3ujsa12tokfc2u5ldeecb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA_Ab_gbDFHS8nyRD3ZY2r2zlhiMtrrbH4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "260263158233-h8ok5rarhet3ujsa12tokfc2u5ldeecb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

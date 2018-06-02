@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name">Запись к врачу</string>
+    <string name="save">Сохранить</string>
+    <string name="button">Талоны</string>
+    <string name="yes">Да</string>
+    <string name="no">Нет</string>
+    <string name="confirm_text">Вы подтверждаете действие?</string>
+    <string name="cancel_talon">Отменить талон?</string>
+    <string name="confirm_talon">Взять талон?</string>
+    <string name="refuse">Отменить</string>
+
+    <string name="user">Кузьмин Владимир Сергеевич</string>
+
+    <string name="format">Фиамилия Имя Отчество 1977-11-23</string>
+
+    <string name="menu0">Настройки</string>
+    <string name="menu1">Инструкция</string>
+    <string name="menu2">Поликлиника</string>
+    <string name="menu3">Доктор</string>
+    <string name="menu4">Карта</string>
+    <string name="menu5">Вопрос</string>
+    <string name="menu6">Base</string>
+
+    <string name="label1">Метка1</string>
+    <string name="label2">Метка2</string>
+    <string name="label3">Метка3</string>
+
+    <string name="umenu0">Пациент 1</string>
+    <string name="umenu1">Пациент 2</string>
+    <string name="umenu2">Пациент 3</string>
+
+    <string name="help_text">
+        Для изменения текстов или параметров - просто нажмите на них (клик).
+\n\n
+        Можно вести трех членов семьи. Для выбора проведите по экрану слева направо (свайп).
+\n\n
+        Записываться можно в поликлиники, где Вы есть в базе (хоть раз посетили регистратуру очно).
+\n\n
+        За наличие-отсутствие талонов овечает Главный врач. Адреса и телефоны поликлиник есть на карте.
+\n\n
+        Приложение лишь транслирует запросы серверам поликлиник, отображая их ответы.
+        Серверы поликлиник могут не отвечать, отвечать непонятно или с задержками.
+
+    </string>
+
+</resources>
