@@ -6,12 +6,19 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.MotionEvent;
+import android.view.View;
 
 import com.anychart.anychart.AnyChart;
 import com.anychart.anychart.AnyChartView;
 import com.anychart.anychart.DataEntry;
+import com.anychart.anychart.EnumsAlign;
+import com.anychart.anychart.LegendLayout;
 import com.anychart.anychart.NameValueDataEntry;
 import com.anychart.anychart.Pie;
+import com.anychart.anychart.Sunburst;
+import com.anychart.anychart.TreeDataEntry;
+import com.anychart.anychart.TreeFillingMethod;
 import com.anychart.anychart.Venn;
 import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.FirebaseFirestore;
@@ -30,7 +37,7 @@ public class MainActivity extends Activity {
     List<DataEntry> contentOfCSVFile;
     String[] headersOfCSVFile = {"first","last","born"};
     String BASE_NAME = "bi";
-    int SELECT_FILE_DIALOG = 1;
+    int FILE_DIALOG = 1;
     private String CSV_SEPARATOR = ",";
 
     @Override
@@ -92,7 +99,7 @@ public class MainActivity extends Activity {
                         Log.d("jop", "Error getting documents.", task.getException());
                     }
                 })
-                //.addOnSuccessListener(documentSnapshots -> mRecyclerView.getAdapter().notifyDataSetChanged());
+                //.addOnSuccessListener(documentSnapshots -> mRecyclerView.getAdapter().notifyDataSetChanged())
                 .addOnSuccessListener(documentSnapshots -> prepareCharts());
         return result;
 
@@ -102,13 +109,13 @@ public class MainActivity extends Activity {
         Intent intent = new Intent(Intent.ACTION_OPEN_DOCUMENT);
         intent.addCategory(Intent.CATEGORY_OPENABLE);
         intent.setType(type);
-        startActivityForResult(intent, SELECT_FILE_DIALOG);
+        startActivityForResult(intent, FILE_DIALOG);
     }
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         if (resultCode == RESULT_OK) {
-            if (requestCode == SELECT_FILE_DIALOG && data != null) {
+            if (requestCode == FILE_DIALOG && data != null) {
                 contentOfCSVFile = loadFromCSVFile(data);
                 prepareCharts();
             }
@@ -142,20 +149,64 @@ public class MainActivity extends Activity {
 
 
     void prepareCharts() {
+
         AnyChartView anyChartView1 = findViewById(R.id.any_chart_view1);
+        Venn venn = AnyChart.venn();
+        venn.setData(contentOfCSVFile);
+        venn.setTitle("Доходы");
+        venn.getLegend().setEnabled(false);
+        anyChartView1.setChart(venn);
+
         AnyChartView anyChartView2 = findViewById(R.id.any_chart_view2);
-        Venn chart1 = AnyChart.venn();
-        Pie chart2 = AnyChart.pie();
-        chart1.setData(contentOfCSVFile);
-        chart2.setData(contentOfCSVFile);
-        anyChartView1.setChart(chart1);
-        anyChartView2.setChart(chart2);
+        Pie pie = AnyChart.pie();
+        //Sunburst pie = AnyChart.sunburst();
+        pie.setData(contentOfCSVFile);
+        pie.setTitle("Расходы");
+        pie.getLegend().setEnabled(true);
+        pie.getLabels().setPosition("outside");
+        anyChartView2.setChart(pie);
+
+        /*
+        pie.getLegend().getTitle().setEnabled(true);
+        pie.getLegend().getTitle()
+                .setText("Retail channels")
+                .setPadding(0d, 0d, 10d, 0d);
+
+        pie.getLegend()
+                .setPosition("center-bottom")
+                .setItemsLayout(LegendLayout.HORIZONTAL)
+                .setAlign(EnumsAlign.CENTER)
+                .setEnabled(false);
+        //pie.getBackground().fill("black",1);
+        */
+
+        /*
+        List<DataEntry> data = new ArrayList<>();
+        data.add(new TreeDataEntry("root",null, 0));
+        data.add(new TreeDataEntry("child1", null, 0));
+        data.add(new TreeDataEntry("child2", "root", 0));
+
+        TreeDataEntry tde1 = new TreeDataEntry("1", "child2", 1);
+        tde1.setValue("1", "111");
+        data.add(tde1);
+
+        TreeDataEntry tde2 = new TreeDataEntry("2", "child2", 2);
+        tde2.setValue("2", "222");
+        data.add(tde2);
+
+        TreeDataEntry tde3 = new TreeDataEntry("3", "child2", 3);
+        tde3.setValue("child2","qweqwe");
+        data.add(tde3);
+
+        pie.setData(data, TreeFillingMethod.AS_TABLE);
+        */
     }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        contentOfCSVFile = loadFromFireBase(BASE_NAME);
     }
 
 }

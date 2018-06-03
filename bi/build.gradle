@@ -14,10 +14,11 @@ android {
         applicationId 'ru.mobiskif.bi'
         minSdkVersion 22
         targetSdkVersion 27
-        versionCode 2
+        versionCode 3
         //testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
         dimension 'tier'
         signingConfig signingConfigs.sign1
+        versionName '3'
     }
     buildTypes {
         release {
