@@ -1,0 +1,293 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /home/john/StudioProjects/Healthy_ANDROID/zdrav/src/main/AndroidManifest.xml:2:1-64:12
+INJECTED from /home/john/StudioProjects/Healthy_ANDROID/zdrav/src/main/AndroidManifest.xml:2:1-64:12
+INJECTED from /home/john/StudioProjects/Healthy_ANDROID/zdrav/src/main/AndroidManifest.xml:2:1-64:12
+INJECTED from /home/john/StudioProjects/Healthy_ANDROID/zdrav/src/main/AndroidManifest.xml:2:1-64:12
+MERGED from [com.google.android.gms:play-services-maps:7.5.0] /home/john/.gradle/caches/transforms-1/files-1.1/play-services-maps-7.5.0.aar/b8cd0c12f6add540c88cab1cef3097ef/AndroidManifest.xml:16:1-30:12
+MERGED from [com.android.support:design:26.1.0] /home/john/.gradle/caches/transforms-1/files-1.1/design-26.1.0.aar/81dcd35a94b98c59d66037fb87fe808a/AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:appcompat-v7:26.1.0] /home/john/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/970b29173d7c623246582dae1ef3312a/AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:cardview-v7:26.1.0] /home/john/.gradle/caches/transforms-1/files-1.1/cardview-v7-26.1.0.aar/a413f8e6184cc699e86762d12800ed88/AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:recyclerview-v7:26.1.0] /home/john/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-26.1.0.aar/2308a8ca33eeec174c4ee74c3703873c/AndroidManifest.xml:17:1-28:12
+MERGED from [com.google.android.gms:play-services-base:7.5.0] /home/john/.gradle/caches/transforms-1/files-1.1/play-services-base-7.5.0.aar/e2b35fa9515cb8737add9f9617a19dd4/AndroidManifest.xml:16:1-26:12
+MERGED from [com.android.support:animated-vector-drawable:26.1.0] /home/john/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-26.1.0.aar/ea7199fc8acc8c4b624441a9533a0d6d/AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:support-vector-drawable:26.1.0] /home/john/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-26.1.0.aar/19e99553c59d7fc680e19e8ec5151148/AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:transition:26.1.0] /home/john/.gradle/caches/transforms-1/files-1.1/transition-26.1.0.aar/8b858491a49e703007b191d8805f9491/AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:support-v4:26.1.0] /home/john/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/555a362f3112e92c58366c12713b01e3/AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-fragment:26.1.0] /home/john/.gradle/caches/transforms-1/files-1.1/support-fragment-26.1.0.aar/3365bad5483690257560afe29c358f4a/AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-core-ui:26.1.0] /home/john/.gradle/caches/transforms-1/files-1.1/support-core-ui-26.1.0.aar/67a5eaef92c0d35bf90f489c29af8db4/AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-media-compat:26.1.0] /home/john/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/d6b62c38385777bfb6ef996a7e0ed543/AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-core-utils:26.1.0] /home/john/.gradle/caches/transforms-1/files-1.1/support-core-utils-26.1.0.aar/e09381289ef3ccc7b78a4e79ba8603a1/AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-compat:26.1.0] /home/john/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/87436b75bc0986cbe2d5ee9fb937e931/AndroidManifest.xml:17:1-31:12
+MERGED from [android.arch.lifecycle:runtime:1.0.0] /home/john/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/d492f5ce9e088d23a6bb09e70a69995a/AndroidManifest.xml:17:1-30:12
+INJECTED from /home/john/StudioProjects/Healthy_ANDROID/zdrav/src/main/AndroidManifest.xml:2:1-64:12
+INJECTED from /home/john/StudioProjects/Healthy_ANDROID/zdrav/src/main/AndroidManifest.xml:2:1-64:12
+INJECTED from /home/john/StudioProjects/Healthy_ANDROID/zdrav/src/main/AndroidManifest.xml:2:1-64:12
+	package
+		ADDED from /home/john/StudioProjects/Healthy_ANDROID/zdrav/src/main/AndroidManifest.xml:3:5-25
+		INJECTED from /home/john/StudioProjects/Healthy_ANDROID/zdrav/src/main/AndroidManifest.xml
+		INJECTED from /home/john/StudioProjects/Healthy_ANDROID/zdrav/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /home/john/StudioProjects/Healthy_ANDROID/zdrav/src/main/AndroidManifest.xml
+		ADDED from /home/john/StudioProjects/Healthy_ANDROID/zdrav/src/main/AndroidManifest.xml:2:1-64:12
+		INJECTED from /home/john/StudioProjects/Healthy_ANDROID/zdrav/src/main/AndroidManifest.xml
+	android:versionCode
+		INJECTED from /home/john/StudioProjects/Healthy_ANDROID/zdrav/src/main/AndroidManifest.xml
+		ADDED from /home/john/StudioProjects/Healthy_ANDROID/zdrav/src/main/AndroidManifest.xml:2:1-64:12
+		INJECTED from /home/john/StudioProjects/Healthy_ANDROID/zdrav/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /home/john/StudioProjects/Healthy_ANDROID/zdrav/src/main/AndroidManifest.xml:2:11-69
+application
+ADDED from /home/john/StudioProjects/Healthy_ANDROID/zdrav/src/main/AndroidManifest.xml:5:5-62:19
+MERGED from [com.google.android.gms:play-services-maps:7.5.0] /home/john/.gradle/caches/transforms-1/files-1.1/play-services-maps-7.5.0.aar/b8cd0c12f6add540c88cab1cef3097ef/AndroidManifest.xml:29:5-20
+MERGED from [com.google.android.gms:play-services-maps:7.5.0] /home/john/.gradle/caches/transforms-1/files-1.1/play-services-maps-7.5.0.aar/b8cd0c12f6add540c88cab1cef3097ef/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:design:26.1.0] /home/john/.gradle/caches/transforms-1/files-1.1/design-26.1.0.aar/81dcd35a94b98c59d66037fb87fe808a/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:design:26.1.0] /home/john/.gradle/caches/transforms-1/files-1.1/design-26.1.0.aar/81dcd35a94b98c59d66037fb87fe808a/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:appcompat-v7:26.1.0] /home/john/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/970b29173d7c623246582dae1ef3312a/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:appcompat-v7:26.1.0] /home/john/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/970b29173d7c623246582dae1ef3312a/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:cardview-v7:26.1.0] /home/john/.gradle/caches/transforms-1/files-1.1/cardview-v7-26.1.0.aar/a413f8e6184cc699e86762d12800ed88/AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:cardview-v7:26.1.0] /home/john/.gradle/caches/transforms-1/files-1.1/cardview-v7-26.1.0.aar/a413f8e6184cc699e86762d12800ed88/AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:recyclerview-v7:26.1.0] /home/john/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-26.1.0.aar/2308a8ca33eeec174c4ee74c3703873c/AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:recyclerview-v7:26.1.0] /home/john/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-26.1.0.aar/2308a8ca33eeec174c4ee74c3703873c/AndroidManifest.xml:22:5-26:19
+MERGED from [com.google.android.gms:play-services-base:7.5.0] /home/john/.gradle/caches/transforms-1/files-1.1/play-services-base-7.5.0.aar/e2b35fa9515cb8737add9f9617a19dd4/AndroidManifest.xml:20:5-24:19
+MERGED from [com.google.android.gms:play-services-base:7.5.0] /home/john/.gradle/caches/transforms-1/files-1.1/play-services-base-7.5.0.aar/e2b35fa9515cb8737add9f9617a19dd4/AndroidManifest.xml:20:5-24:19
+MERGED from [com.android.support:animated-vector-drawable:26.1.0] /home/john/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-26.1.0.aar/ea7199fc8acc8c4b624441a9533a0d6d/AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:animated-vector-drawable:26.1.0] /home/john/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-26.1.0.aar/ea7199fc8acc8c4b624441a9533a0d6d/AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:support-vector-drawable:26.1.0] /home/john/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-26.1.0.aar/19e99553c59d7fc680e19e8ec5151148/AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:support-vector-drawable:26.1.0] /home/john/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-26.1.0.aar/19e99553c59d7fc680e19e8ec5151148/AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:transition:26.1.0] /home/john/.gradle/caches/transforms-1/files-1.1/transition-26.1.0.aar/8b858491a49e703007b191d8805f9491/AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:transition:26.1.0] /home/john/.gradle/caches/transforms-1/files-1.1/transition-26.1.0.aar/8b858491a49e703007b191d8805f9491/AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:support-v4:26.1.0] /home/john/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/555a362f3112e92c58366c12713b01e3/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-v4:26.1.0] /home/john/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/555a362f3112e92c58366c12713b01e3/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-fragment:26.1.0] /home/john/.gradle/caches/transforms-1/files-1.1/support-fragment-26.1.0.aar/3365bad5483690257560afe29c358f4a/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-fragment:26.1.0] /home/john/.gradle/caches/transforms-1/files-1.1/support-fragment-26.1.0.aar/3365bad5483690257560afe29c358f4a/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-core-ui:26.1.0] /home/john/.gradle/caches/transforms-1/files-1.1/support-core-ui-26.1.0.aar/67a5eaef92c0d35bf90f489c29af8db4/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-core-ui:26.1.0] /home/john/.gradle/caches/transforms-1/files-1.1/support-core-ui-26.1.0.aar/67a5eaef92c0d35bf90f489c29af8db4/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-media-compat:26.1.0] /home/john/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/d6b62c38385777bfb6ef996a7e0ed543/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-media-compat:26.1.0] /home/john/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/d6b62c38385777bfb6ef996a7e0ed543/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-core-utils:26.1.0] /home/john/.gradle/caches/transforms-1/files-1.1/support-core-utils-26.1.0.aar/e09381289ef3ccc7b78a4e79ba8603a1/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-core-utils:26.1.0] /home/john/.gradle/caches/transforms-1/files-1.1/support-core-utils-26.1.0.aar/e09381289ef3ccc7b78a4e79ba8603a1/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-compat:26.1.0] /home/john/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/87436b75bc0986cbe2d5ee9fb937e931/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-compat:26.1.0] /home/john/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/87436b75bc0986cbe2d5ee9fb937e931/AndroidManifest.xml:25:5-29:19
+MERGED from [android.arch.lifecycle:runtime:1.0.0] /home/john/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/d492f5ce9e088d23a6bb09e70a69995a/AndroidManifest.xml:24:5-28:19
+MERGED from [android.arch.lifecycle:runtime:1.0.0] /home/john/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/d492f5ce9e088d23a6bb09e70a69995a/AndroidManifest.xml:24:5-28:19
+	android:supportsRtl
+		ADDED from /home/john/StudioProjects/Healthy_ANDROID/zdrav/src/main/AndroidManifest.xml:10:9-36
+	android:label
+		ADDED from /home/john/StudioProjects/Healthy_ANDROID/zdrav/src/main/AndroidManifest.xml:6:9-41
+	android:fullBackupContent
+		ADDED from /home/john/StudioProjects/Healthy_ANDROID/zdrav/src/main/AndroidManifest.xml:11:9-59
+	android:icon
+		ADDED from /home/john/StudioProjects/Healthy_ANDROID/zdrav/src/main/AndroidManifest.xml:8:9-48
+	android:allowBackup
+		ADDED from /home/john/StudioProjects/Healthy_ANDROID/zdrav/src/main/AndroidManifest.xml:9:9-35
+	android:theme
+		ADDED from /home/john/StudioProjects/Healthy_ANDROID/zdrav/src/main/AndroidManifest.xml:7:9-45
+meta-data#com.google.android.geo.API_KEY
+ADDED from /home/john/StudioProjects/Healthy_ANDROID/zdrav/src/main/AndroidManifest.xml:12:9-14:71
+	android:value
+		ADDED from /home/john/StudioProjects/Healthy_ANDROID/zdrav/src/main/AndroidManifest.xml:14:13-68
+	android:name
+		ADDED from /home/john/StudioProjects/Healthy_ANDROID/zdrav/src/main/AndroidManifest.xml:13:13-58
+activity#ru.mobiskif.zdrav.Activity_0_UA
+ADDED from /home/john/StudioProjects/Healthy_ANDROID/zdrav/src/main/AndroidManifest.xml:16:9-19:76
+	android:parentActivityName
+		ADDED from /home/john/StudioProjects/Healthy_ANDROID/zdrav/src/main/AndroidManifest.xml:19:13-74
+	android:label
+		ADDED from /home/john/StudioProjects/Healthy_ANDROID/zdrav/src/main/AndroidManifest.xml:18:13-42
+	android:name
+		ADDED from /home/john/StudioProjects/Healthy_ANDROID/zdrav/src/main/AndroidManifest.xml:17:13-59
+activity#ru.mobiskif.zdrav.Activity_6_help
+ADDED from /home/john/StudioProjects/Healthy_ANDROID/zdrav/src/main/AndroidManifest.xml:20:9-23:76
+	android:parentActivityName
+		ADDED from /home/john/StudioProjects/Healthy_ANDROID/zdrav/src/main/AndroidManifest.xml:23:13-74
+	android:label
+		ADDED from /home/john/StudioProjects/Healthy_ANDROID/zdrav/src/main/AndroidManifest.xml:22:13-42
+	android:name
+		ADDED from /home/john/StudioProjects/Healthy_ANDROID/zdrav/src/main/AndroidManifest.xml:21:13-61
+activity#ru.mobiskif.zdrav.Activity_1_ULH
+ADDED from /home/john/StudioProjects/Healthy_ANDROID/zdrav/src/main/AndroidManifest.xml:24:9-43:20
+	android:label
+		ADDED from /home/john/StudioProjects/Healthy_ANDROID/zdrav/src/main/AndroidManifest.xml:26:13-45
+	android:name
+		ADDED from /home/john/StudioProjects/Healthy_ANDROID/zdrav/src/main/AndroidManifest.xml:25:13-60
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /home/john/StudioProjects/Healthy_ANDROID/zdrav/src/main/AndroidManifest.xml:27:13-31:29
+action#android.intent.action.MAIN
+ADDED from /home/john/StudioProjects/Healthy_ANDROID/zdrav/src/main/AndroidManifest.xml:28:17-69
+	android:name
+		ADDED from /home/john/StudioProjects/Healthy_ANDROID/zdrav/src/main/AndroidManifest.xml:28:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /home/john/StudioProjects/Healthy_ANDROID/zdrav/src/main/AndroidManifest.xml:30:17-77
+	android:name
+		ADDED from /home/john/StudioProjects/Healthy_ANDROID/zdrav/src/main/AndroidManifest.xml:30:27-74
+intent-filter#action:name:android.intent.action.VIEW+category:name:android.intent.category.BROWSABLE+category:name:android.intent.category.DEFAULT+data:host:api.netrika.ru+data:pathPattern:/healthy+data:scheme:http
+ADDED from /home/john/StudioProjects/Healthy_ANDROID/zdrav/src/main/AndroidManifest.xml:32:13-42:29
+action#android.intent.action.VIEW
+ADDED from /home/john/StudioProjects/Healthy_ANDROID/zdrav/src/main/AndroidManifest.xml:33:17-69
+	android:name
+		ADDED from /home/john/StudioProjects/Healthy_ANDROID/zdrav/src/main/AndroidManifest.xml:33:25-66
+category#android.intent.category.DEFAULT
+ADDED from /home/john/StudioProjects/Healthy_ANDROID/zdrav/src/main/AndroidManifest.xml:35:17-76
+	android:name
+		ADDED from /home/john/StudioProjects/Healthy_ANDROID/zdrav/src/main/AndroidManifest.xml:35:27-73
+category#android.intent.category.BROWSABLE
+ADDED from /home/john/StudioProjects/Healthy_ANDROID/zdrav/src/main/AndroidManifest.xml:36:17-78
+	android:name
+		ADDED from /home/john/StudioProjects/Healthy_ANDROID/zdrav/src/main/AndroidManifest.xml:36:27-75
+data
+ADDED from /home/john/StudioProjects/Healthy_ANDROID/zdrav/src/main/AndroidManifest.xml:38:17-41:45
+	android:host
+		ADDED from /home/john/StudioProjects/Healthy_ANDROID/zdrav/src/main/AndroidManifest.xml:39:21-50
+	android:scheme
+		ADDED from /home/john/StudioProjects/Healthy_ANDROID/zdrav/src/main/AndroidManifest.xml:41:21-42
+	android:pathPattern
+		ADDED from /home/john/StudioProjects/Healthy_ANDROID/zdrav/src/main/AndroidManifest.xml:40:21-51
+activity#ru.mobiskif.zdrav.Activity_2_LSD
+ADDED from /home/john/StudioProjects/Healthy_ANDROID/zdrav/src/main/AndroidManifest.xml:44:9-47:76
+	android:parentActivityName
+		ADDED from /home/john/StudioProjects/Healthy_ANDROID/zdrav/src/main/AndroidManifest.xml:47:13-74
+	android:label
+		ADDED from /home/john/StudioProjects/Healthy_ANDROID/zdrav/src/main/AndroidManifest.xml:46:13-42
+	android:name
+		ADDED from /home/john/StudioProjects/Healthy_ANDROID/zdrav/src/main/AndroidManifest.xml:45:13-60
+activity#ru.mobiskif.zdrav.Activity_3_DRT
+ADDED from /home/john/StudioProjects/Healthy_ANDROID/zdrav/src/main/AndroidManifest.xml:48:9-51:76
+	android:parentActivityName
+		ADDED from /home/john/StudioProjects/Healthy_ANDROID/zdrav/src/main/AndroidManifest.xml:51:13-74
+	android:label
+		ADDED from /home/john/StudioProjects/Healthy_ANDROID/zdrav/src/main/AndroidManifest.xml:50:13-42
+	android:name
+		ADDED from /home/john/StudioProjects/Healthy_ANDROID/zdrav/src/main/AndroidManifest.xml:49:13-60
+activity#ru.mobiskif.zdrav.Activity_4_MAP
+ADDED from /home/john/StudioProjects/Healthy_ANDROID/zdrav/src/main/AndroidManifest.xml:52:9-54:44
+	android:label
+		ADDED from /home/john/StudioProjects/Healthy_ANDROID/zdrav/src/main/AndroidManifest.xml:54:13-42
+	android:name
+		ADDED from /home/john/StudioProjects/Healthy_ANDROID/zdrav/src/main/AndroidManifest.xml:53:13-60
+activity#ru.mobiskif.zdrav.Activity_5_YN
+ADDED from /home/john/StudioProjects/Healthy_ANDROID/zdrav/src/main/AndroidManifest.xml:55:9-58:45
+	android:label
+		ADDED from /home/john/StudioProjects/Healthy_ANDROID/zdrav/src/main/AndroidManifest.xml:58:13-42
+	android:theme
+		ADDED from /home/john/StudioProjects/Healthy_ANDROID/zdrav/src/main/AndroidManifest.xml:57:13-58
+	android:name
+		ADDED from /home/john/StudioProjects/Healthy_ANDROID/zdrav/src/main/AndroidManifest.xml:56:13-59
+activity#ru.mobiskif.zdrav.ActivityBase
+ADDED from /home/john/StudioProjects/Healthy_ANDROID/zdrav/src/main/AndroidManifest.xml:59:9-60:61
+	android:name
+		ADDED from /home/john/StudioProjects/Healthy_ANDROID/zdrav/src/main/AndroidManifest.xml:60:13-58
+uses-sdk
+INJECTED from /home/john/StudioProjects/Healthy_ANDROID/zdrav/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /home/john/StudioProjects/Healthy_ANDROID/zdrav/src/main/AndroidManifest.xml
+INJECTED from /home/john/StudioProjects/Healthy_ANDROID/zdrav/src/main/AndroidManifest.xml
+MERGED from [com.google.android.gms:play-services-maps:7.5.0] /home/john/.gradle/caches/transforms-1/files-1.1/play-services-maps-7.5.0.aar/b8cd0c12f6add540c88cab1cef3097ef/AndroidManifest.xml:28:5-42
+MERGED from [com.google.android.gms:play-services-maps:7.5.0] /home/john/.gradle/caches/transforms-1/files-1.1/play-services-maps-7.5.0.aar/b8cd0c12f6add540c88cab1cef3097ef/AndroidManifest.xml:28:5-42
+MERGED from [com.android.support:design:26.1.0] /home/john/.gradle/caches/transforms-1/files-1.1/design-26.1.0.aar/81dcd35a94b98c59d66037fb87fe808a/AndroidManifest.xml:21:5-23:62
+MERGED from [com.android.support:design:26.1.0] /home/john/.gradle/caches/transforms-1/files-1.1/design-26.1.0.aar/81dcd35a94b98c59d66037fb87fe808a/AndroidManifest.xml:21:5-23:62
+MERGED from [com.android.support:appcompat-v7:26.1.0] /home/john/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/970b29173d7c623246582dae1ef3312a/AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:appcompat-v7:26.1.0] /home/john/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/970b29173d7c623246582dae1ef3312a/AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:cardview-v7:26.1.0] /home/john/.gradle/caches/transforms-1/files-1.1/cardview-v7-26.1.0.aar/a413f8e6184cc699e86762d12800ed88/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cardview-v7:26.1.0] /home/john/.gradle/caches/transforms-1/files-1.1/cardview-v7-26.1.0.aar/a413f8e6184cc699e86762d12800ed88/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:26.1.0] /home/john/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-26.1.0.aar/2308a8ca33eeec174c4ee74c3703873c/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:26.1.0] /home/john/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-26.1.0.aar/2308a8ca33eeec174c4ee74c3703873c/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-base:7.5.0] /home/john/.gradle/caches/transforms-1/files-1.1/play-services-base-7.5.0.aar/e2b35fa9515cb8737add9f9617a19dd4/AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-base:7.5.0] /home/john/.gradle/caches/transforms-1/files-1.1/play-services-base-7.5.0.aar/e2b35fa9515cb8737add9f9617a19dd4/AndroidManifest.xml:18:5-42
+MERGED from [com.android.support:animated-vector-drawable:26.1.0] /home/john/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-26.1.0.aar/ea7199fc8acc8c4b624441a9533a0d6d/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:26.1.0] /home/john/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-26.1.0.aar/ea7199fc8acc8c4b624441a9533a0d6d/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:26.1.0] /home/john/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-26.1.0.aar/19e99553c59d7fc680e19e8ec5151148/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:26.1.0] /home/john/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-26.1.0.aar/19e99553c59d7fc680e19e8ec5151148/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:26.1.0] /home/john/.gradle/caches/transforms-1/files-1.1/transition-26.1.0.aar/8b858491a49e703007b191d8805f9491/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:26.1.0] /home/john/.gradle/caches/transforms-1/files-1.1/transition-26.1.0.aar/8b858491a49e703007b191d8805f9491/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:26.1.0] /home/john/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/555a362f3112e92c58366c12713b01e3/AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-v4:26.1.0] /home/john/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/555a362f3112e92c58366c12713b01e3/AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-fragment:26.1.0] /home/john/.gradle/caches/transforms-1/files-1.1/support-fragment-26.1.0.aar/3365bad5483690257560afe29c358f4a/AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-fragment:26.1.0] /home/john/.gradle/caches/transforms-1/files-1.1/support-fragment-26.1.0.aar/3365bad5483690257560afe29c358f4a/AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-core-ui:26.1.0] /home/john/.gradle/caches/transforms-1/files-1.1/support-core-ui-26.1.0.aar/67a5eaef92c0d35bf90f489c29af8db4/AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-core-ui:26.1.0] /home/john/.gradle/caches/transforms-1/files-1.1/support-core-ui-26.1.0.aar/67a5eaef92c0d35bf90f489c29af8db4/AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-media-compat:26.1.0] /home/john/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/d6b62c38385777bfb6ef996a7e0ed543/AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-media-compat:26.1.0] /home/john/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/d6b62c38385777bfb6ef996a7e0ed543/AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-core-utils:26.1.0] /home/john/.gradle/caches/transforms-1/files-1.1/support-core-utils-26.1.0.aar/e09381289ef3ccc7b78a4e79ba8603a1/AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-core-utils:26.1.0] /home/john/.gradle/caches/transforms-1/files-1.1/support-core-utils-26.1.0.aar/e09381289ef3ccc7b78a4e79ba8603a1/AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-compat:26.1.0] /home/john/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/87436b75bc0986cbe2d5ee9fb937e931/AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-compat:26.1.0] /home/john/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/87436b75bc0986cbe2d5ee9fb937e931/AndroidManifest.xml:21:5-23:58
+MERGED from [android.arch.lifecycle:runtime:1.0.0] /home/john/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/d492f5ce9e088d23a6bb09e70a69995a/AndroidManifest.xml:20:5-22:41
+MERGED from [android.arch.lifecycle:runtime:1.0.0] /home/john/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/d492f5ce9e088d23a6bb09e70a69995a/AndroidManifest.xml:20:5-22:41
+INJECTED from /home/john/StudioProjects/Healthy_ANDROID/zdrav/src/main/AndroidManifest.xml
+INJECTED from /home/john/StudioProjects/Healthy_ANDROID/zdrav/src/main/AndroidManifest.xml
+	tools:overrideLibrary
+		ADDED from [com.android.support:design:26.1.0] /home/john/.gradle/caches/transforms-1/files-1.1/design-26.1.0.aar/81dcd35a94b98c59d66037fb87fe808a/AndroidManifest.xml:23:9-59
+	android:targetSdkVersion
+		INJECTED from /home/john/StudioProjects/Healthy_ANDROID/zdrav/src/main/AndroidManifest.xml
+		ADDED from /home/john/StudioProjects/Healthy_ANDROID/zdrav/src/main/AndroidManifest.xml
+		INJECTED from /home/john/StudioProjects/Healthy_ANDROID/zdrav/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /home/john/StudioProjects/Healthy_ANDROID/zdrav/src/main/AndroidManifest.xml
+		ADDED from /home/john/StudioProjects/Healthy_ANDROID/zdrav/src/main/AndroidManifest.xml
+		INJECTED from /home/john/StudioProjects/Healthy_ANDROID/zdrav/src/main/AndroidManifest.xml
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from [com.google.android.gms:play-services-maps:7.5.0] /home/john/.gradle/caches/transforms-1/files-1.1/play-services-maps-7.5.0.aar/b8cd0c12f6add540c88cab1cef3097ef/AndroidManifest.xml:20:5-78
+	android:name
+		ADDED from [com.google.android.gms:play-services-maps:7.5.0] /home/john/.gradle/caches/transforms-1/files-1.1/play-services-maps-7.5.0.aar/b8cd0c12f6add540c88cab1cef3097ef/AndroidManifest.xml:20:22-76
+uses-permission#android.permission.INTERNET
+ADDED from [com.google.android.gms:play-services-maps:7.5.0] /home/john/.gradle/caches/transforms-1/files-1.1/play-services-maps-7.5.0.aar/b8cd0c12f6add540c88cab1cef3097ef/AndroidManifest.xml:21:5-66
+	android:name
+		ADDED from [com.google.android.gms:play-services-maps:7.5.0] /home/john/.gradle/caches/transforms-1/files-1.1/play-services-maps-7.5.0.aar/b8cd0c12f6add540c88cab1cef3097ef/AndroidManifest.xml:21:22-64
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from [com.google.android.gms:play-services-maps:7.5.0] /home/john/.gradle/caches/transforms-1/files-1.1/play-services-maps-7.5.0.aar/b8cd0c12f6add540c88cab1cef3097ef/AndroidManifest.xml:22:5-80
+	android:name
+		ADDED from [com.google.android.gms:play-services-maps:7.5.0] /home/john/.gradle/caches/transforms-1/files-1.1/play-services-maps-7.5.0.aar/b8cd0c12f6add540c88cab1cef3097ef/AndroidManifest.xml:22:22-78
+uses-permission#android.permission.ACCESS_COARSE_LOCATION
+ADDED from [com.google.android.gms:play-services-maps:7.5.0] /home/john/.gradle/caches/transforms-1/files-1.1/play-services-maps-7.5.0.aar/b8cd0c12f6add540c88cab1cef3097ef/AndroidManifest.xml:23:5-80
+	android:name
+		ADDED from [com.google.android.gms:play-services-maps:7.5.0] /home/john/.gradle/caches/transforms-1/files-1.1/play-services-maps-7.5.0.aar/b8cd0c12f6add540c88cab1cef3097ef/AndroidManifest.xml:23:22-78
+uses-feature#0x00020000
+ADDED from [com.google.android.gms:play-services-maps:7.5.0] /home/john/.gradle/caches/transforms-1/files-1.1/play-services-maps-7.5.0.aar/b8cd0c12f6add540c88cab1cef3097ef/AndroidManifest.xml:24:5-26:33
+	android:glEsVersion
+		ADDED from [com.google.android.gms:play-services-maps:7.5.0] /home/john/.gradle/caches/transforms-1/files-1.1/play-services-maps-7.5.0.aar/b8cd0c12f6add540c88cab1cef3097ef/AndroidManifest.xml:25:8-40
+	android:required
+		ADDED from [com.google.android.gms:play-services-maps:7.5.0] /home/john/.gradle/caches/transforms-1/files-1.1/play-services-maps-7.5.0.aar/b8cd0c12f6add540c88cab1cef3097ef/AndroidManifest.xml:26:8-31
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+IMPLIED from /home/john/StudioProjects/Healthy_ANDROID/zdrav/src/main/AndroidManifest.xml:2:1-64:12 reason: com.google.android.gms.maps requested WRITE_EXTERNAL_STORAGE
+meta-data#android.support.VERSION
+ADDED from [com.android.support:design:26.1.0] /home/john/.gradle/caches/transforms-1/files-1.1/design-26.1.0.aar/81dcd35a94b98c59d66037fb87fe808a/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:appcompat-v7:26.1.0] /home/john/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/970b29173d7c623246582dae1ef3312a/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:appcompat-v7:26.1.0] /home/john/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/970b29173d7c623246582dae1ef3312a/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:cardview-v7:26.1.0] /home/john/.gradle/caches/transforms-1/files-1.1/cardview-v7-26.1.0.aar/a413f8e6184cc699e86762d12800ed88/AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:cardview-v7:26.1.0] /home/john/.gradle/caches/transforms-1/files-1.1/cardview-v7-26.1.0.aar/a413f8e6184cc699e86762d12800ed88/AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:recyclerview-v7:26.1.0] /home/john/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-26.1.0.aar/2308a8ca33eeec174c4ee74c3703873c/AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:recyclerview-v7:26.1.0] /home/john/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-26.1.0.aar/2308a8ca33eeec174c4ee74c3703873c/AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:animated-vector-drawable:26.1.0] /home/john/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-26.1.0.aar/ea7199fc8acc8c4b624441a9533a0d6d/AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:animated-vector-drawable:26.1.0] /home/john/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-26.1.0.aar/ea7199fc8acc8c4b624441a9533a0d6d/AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:support-vector-drawable:26.1.0] /home/john/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-26.1.0.aar/19e99553c59d7fc680e19e8ec5151148/AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:support-vector-drawable:26.1.0] /home/john/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-26.1.0.aar/19e99553c59d7fc680e19e8ec5151148/AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:transition:26.1.0] /home/john/.gradle/caches/transforms-1/files-1.1/transition-26.1.0.aar/8b858491a49e703007b191d8805f9491/AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:transition:26.1.0] /home/john/.gradle/caches/transforms-1/files-1.1/transition-26.1.0.aar/8b858491a49e703007b191d8805f9491/AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:support-v4:26.1.0] /home/john/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/555a362f3112e92c58366c12713b01e3/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-v4:26.1.0] /home/john/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/555a362f3112e92c58366c12713b01e3/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-fragment:26.1.0] /home/john/.gradle/caches/transforms-1/files-1.1/support-fragment-26.1.0.aar/3365bad5483690257560afe29c358f4a/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-fragment:26.1.0] /home/john/.gradle/caches/transforms-1/files-1.1/support-fragment-26.1.0.aar/3365bad5483690257560afe29c358f4a/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-core-ui:26.1.0] /home/john/.gradle/caches/transforms-1/files-1.1/support-core-ui-26.1.0.aar/67a5eaef92c0d35bf90f489c29af8db4/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-core-ui:26.1.0] /home/john/.gradle/caches/transforms-1/files-1.1/support-core-ui-26.1.0.aar/67a5eaef92c0d35bf90f489c29af8db4/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-media-compat:26.1.0] /home/john/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/d6b62c38385777bfb6ef996a7e0ed543/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-media-compat:26.1.0] /home/john/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/d6b62c38385777bfb6ef996a7e0ed543/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-core-utils:26.1.0] /home/john/.gradle/caches/transforms-1/files-1.1/support-core-utils-26.1.0.aar/e09381289ef3ccc7b78a4e79ba8603a1/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-core-utils:26.1.0] /home/john/.gradle/caches/transforms-1/files-1.1/support-core-utils-26.1.0.aar/e09381289ef3ccc7b78a4e79ba8603a1/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-compat:26.1.0] /home/john/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/87436b75bc0986cbe2d5ee9fb937e931/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-compat:26.1.0] /home/john/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/87436b75bc0986cbe2d5ee9fb937e931/AndroidManifest.xml:26:9-28:38
+	android:value
+		ADDED from [com.android.support:design:26.1.0] /home/john/.gradle/caches/transforms-1/files-1.1/design-26.1.0.aar/81dcd35a94b98c59d66037fb87fe808a/AndroidManifest.xml:28:13-35
+	android:name
+		ADDED from [com.android.support:design:26.1.0] /home/john/.gradle/caches/transforms-1/files-1.1/design-26.1.0.aar/81dcd35a94b98c59d66037fb87fe808a/AndroidManifest.xml:27:13-51
+meta-data#com.google.android.gms.version
+ADDED from [com.google.android.gms:play-services-base:7.5.0] /home/john/.gradle/caches/transforms-1/files-1.1/play-services-base-7.5.0.aar/e2b35fa9515cb8737add9f9617a19dd4/AndroidManifest.xml:21:9-23:69
+	android:value
+		ADDED from [com.google.android.gms:play-services-base:7.5.0] /home/john/.gradle/caches/transforms-1/files-1.1/play-services-base-7.5.0.aar/e2b35fa9515cb8737add9f9617a19dd4/AndroidManifest.xml:23:13-66
+	android:name
+		ADDED from [com.google.android.gms:play-services-base:7.5.0] /home/john/.gradle/caches/transforms-1/files-1.1/play-services-base-7.5.0.aar/e2b35fa9515cb8737add9f9617a19dd4/AndroidManifest.xml:22:13-58
+meta-data#android.arch.lifecycle.VERSION
+ADDED from [android.arch.lifecycle:runtime:1.0.0] /home/john/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/d492f5ce9e088d23a6bb09e70a69995a/AndroidManifest.xml:25:9-27:47
+	android:value
+		ADDED from [android.arch.lifecycle:runtime:1.0.0] /home/john/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/d492f5ce9e088d23a6bb09e70a69995a/AndroidManifest.xml:27:13-44
+	android:name
+		ADDED from [android.arch.lifecycle:runtime:1.0.0] /home/john/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/d492f5ce9e088d23a6bb09e70a69995a/AndroidManifest.xml:26:13-58

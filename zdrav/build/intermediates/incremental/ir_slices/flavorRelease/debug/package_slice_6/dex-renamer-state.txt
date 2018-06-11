@@ -1,0 +1,4 @@
+#Sat Jun 02 10:25:05 MSK 2018
+base.0=/home/john/StudioProjects/Healthy_ANDROID/zdrav/build/intermediates/transforms/dexMerger/flavorRelease/debug/6
+path.0=classes.dex
+renamed.0=classes.dex

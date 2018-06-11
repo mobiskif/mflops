@@ -32,7 +32,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
-public class MainActivity extends Activity {
+public class MainActivity extends Activity implements View.OnClickListener, View.OnTouchListener {
     //GoogleSpeech tts;
     List<DataEntry> contentOfCSVFile;
     String[] headersOfCSVFile = {"first","last","born"};
@@ -159,47 +159,11 @@ public class MainActivity extends Activity {
 
         AnyChartView anyChartView2 = findViewById(R.id.any_chart_view2);
         Pie pie = AnyChart.pie();
-        //Sunburst pie = AnyChart.sunburst();
         pie.setData(contentOfCSVFile);
         pie.setTitle("Расходы");
-        pie.getLegend().setEnabled(true);
         pie.getLabels().setPosition("outside");
         anyChartView2.setChart(pie);
 
-        /*
-        pie.getLegend().getTitle().setEnabled(true);
-        pie.getLegend().getTitle()
-                .setText("Retail channels")
-                .setPadding(0d, 0d, 10d, 0d);
-
-        pie.getLegend()
-                .setPosition("center-bottom")
-                .setItemsLayout(LegendLayout.HORIZONTAL)
-                .setAlign(EnumsAlign.CENTER)
-                .setEnabled(false);
-        //pie.getBackground().fill("black",1);
-        */
-
-        /*
-        List<DataEntry> data = new ArrayList<>();
-        data.add(new TreeDataEntry("root",null, 0));
-        data.add(new TreeDataEntry("child1", null, 0));
-        data.add(new TreeDataEntry("child2", "root", 0));
-
-        TreeDataEntry tde1 = new TreeDataEntry("1", "child2", 1);
-        tde1.setValue("1", "111");
-        data.add(tde1);
-
-        TreeDataEntry tde2 = new TreeDataEntry("2", "child2", 2);
-        tde2.setValue("2", "222");
-        data.add(tde2);
-
-        TreeDataEntry tde3 = new TreeDataEntry("3", "child2", 3);
-        tde3.setValue("child2","qweqwe");
-        data.add(tde3);
-
-        pie.setData(data, TreeFillingMethod.AS_TABLE);
-        */
     }
 
     @Override
@@ -209,4 +173,14 @@ public class MainActivity extends Activity {
         contentOfCSVFile = loadFromFireBase(BASE_NAME);
     }
 
+    @Override
+    public void onClick(View v) {
+        Log.d("jop",v.toString());
+    }
+
+    @Override
+    public boolean onTouch(View v, MotionEvent event) {
+        Log.d("jop",v.toString());
+        return true;
+    }
 }
