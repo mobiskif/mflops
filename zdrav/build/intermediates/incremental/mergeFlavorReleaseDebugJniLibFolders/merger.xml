@@ -1,2 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<merger version="3"><dataSet config="main"><source path="/home/john/StudioProjects/Healthy_ANDROID/zdrav/src/main/jniLibs"/></dataSet><dataSet config="flavorRelease"><source path="/home/john/StudioProjects/Healthy_ANDROID/zdrav/src/flavorRelease/jniLibs"/></dataSet><dataSet config="debug"><source path="/home/john/StudioProjects/Healthy_ANDROID/zdrav/src/debug/jniLibs"/></dataSet><dataSet config="flavorReleaseDebug"><source path="/home/john/StudioProjects/Healthy_ANDROID/zdrav/src/flavorReleaseDebug/jniLibs"/></dataSet></merger>
