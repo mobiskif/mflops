@@ -15,7 +15,6 @@ import com.google.android.gms.maps.model.MarkerOptions;
 
 import java.util.List;
 
-import ru.healthy.R;
 
 import static java.lang.Math.random;
 

@@ -1,3 +1,4 @@
 include ':spb'
 include ':bi'
 include ':zdrav'
+include ':geo'

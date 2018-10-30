@@ -11,7 +11,6 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.TextView;
 
-import ru.healthy.R;
 
 public class CardAdapter extends RecyclerView.Adapter<CardAdapter.ViewHolder> implements IDataAdapter{
     private String[] mDataset;

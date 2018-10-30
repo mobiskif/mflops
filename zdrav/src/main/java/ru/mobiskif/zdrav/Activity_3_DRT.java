@@ -6,7 +6,6 @@ import android.support.design.widget.AppBarLayout;
 import android.view.View;
 import android.widget.AdapterView;
 
-import ru.healthy.R;
 
 public class Activity_3_DRT extends ActivityBase {
 

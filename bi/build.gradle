@@ -5,15 +5,15 @@ android {
         sign1 {
             keyAlias 'key0'
             keyPassword 'router1966'
-            storeFile file('/home/john/Рабочий стол/keys/keystore.jks')
+            storeFile file('Android/keystore.jks')
             storePassword 'router1966'
         }
     }
-    compileSdkVersion 27
+    compileSdkVersion 28
     defaultConfig {
         applicationId 'ru.mobiskif.bi'
         minSdkVersion 22
-        targetSdkVersion 27
+        targetSdkVersion 28
         versionCode 3
         //testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
         dimension 'tier'
@@ -26,7 +26,7 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
-    buildToolsVersion '27.0.3'
+    buildToolsVersion '28.0.3'
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8

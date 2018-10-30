@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:yourapp="http://schemas.android.com/apk/res-auto" >
+    <item
+        android:id="@+id/uers"
+        android:icon="@drawable/user_28x28"
+        android:title="Выбрать пациента"
+        yourapp:showAsAction="always" />
+    <item
+        android:id="@+id/district"
+        android:icon="@drawable/district"
+        android:title="Выбрать район"
+        android:visible="false"
+        yourapp:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/readme"
+        android:icon="@drawable/help_28"
+        android:title="Как это работает?"
+        yourapp:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/app_bar_switch"
+        android:title="Показать скрытое"
+        yourapp:showAsAction="never" />
+    <item
+        android:id="@+id/exit"
+        android:title="Выйти"
+        yourapp:showAsAction="never" />
+</menu>

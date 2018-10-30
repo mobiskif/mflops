@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="ru.mobiskif.geo">
+
+    <!--
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/redcross_128x128"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/redcross_128x128"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyCK43E5x8nS9Ct4esytGVWto8bXQRJZQ0Y" />
+
+        <activity android:name=".ActivityCustom" />
+        <activity
+            android:name=".ActivityHelp"
+            android:label="Как это работает"
+            android:parentActivityName=".ActivityLPU" />
+            />
+        <activity
+            android:name=".ActivityChangeUser"
+            android:label="@string/title_activity_change_user"
+            android:parentActivityName=".ActivityDistrict" />
+        <activity
+            android:name=".ActivityDistrict"
+            android:label="@string/activity_district"
+            android:parentActivityName=".ActivityLPU" />
+        <activity
+            android:name=".ActivityLPU"
+            android:label="@string/app_name"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ActivitySpeciality"
+            android:label="@string/activity_speciality"
+            android:parentActivityName=".ActivityLPU" />
+        <activity
+            android:name=".ActivityDoctor"
+            android:label="@string/activity_doctor"
+            android:parentActivityName=".ActivitySpeciality" />
+        <activity
+            android:name=".ActivityAvailable"
+            android:label="@string/activity_available"
+            android:parentActivityName=".ActivityDoctor" />
+        <activity
+            android:name=".ActivityMap"
+            android:label="@string/activity_map"
+            android:parentActivityName=".ActivityDistrict" />
+    </application>
+
+</manifest>

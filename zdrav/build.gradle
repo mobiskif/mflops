@@ -7,13 +7,13 @@ allprojects {
 }
 
 android {
-    compileSdkVersion 27
-    buildToolsVersion '27.0.3'
+    compileSdkVersion 28
+    buildToolsVersion '28.0.3'
     flavorDimensions "default"
 
     signingConfigs {
         sign1 {
-            storeFile file('/home/john/Рабочий стол/keys/keystore.jks')
+            storeFile file('Android/keystore.jks')
             keyAlias 'key0'
             keyPassword 'router1966'
             storePassword 'router1966'
@@ -23,7 +23,7 @@ android {
     defaultConfig {
         applicationId 'ru.mobiskif.zdrav'
         minSdkVersion 15
-        targetSdkVersion 27
+        targetSdkVersion 28
         versionCode 45
         versionName '45'
         vectorDrawables.useSupportLibrary = true

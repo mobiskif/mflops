@@ -6,7 +6,6 @@ import android.widget.AdapterView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import ru.healthy.R;
 
 public class Activity_0_UA extends ActivityBase {
 

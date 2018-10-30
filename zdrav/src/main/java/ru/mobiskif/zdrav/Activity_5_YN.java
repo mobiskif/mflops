@@ -6,7 +6,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.TextView;
 
-import ru.healthy.R;
 
 public class Activity_5_YN extends AppCompatActivity implements View.OnClickListener {
 

@@ -9,6 +9,7 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/bi" />
+            <option value="$PROJECT_DIR$/geo" />
             <option value="$PROJECT_DIR$/spb" />
             <option value="$PROJECT_DIR$/zdrav" />
           </set>

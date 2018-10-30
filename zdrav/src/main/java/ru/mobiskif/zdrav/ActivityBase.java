@@ -19,7 +19,6 @@ import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import ru.healthy.R;
 
 import static java.lang.Math.random;
 

@@ -2,7 +2,6 @@ package ru.mobiskif.zdrav;
 
 import android.view.View;
 
-import ru.healthy.R;
 
 public class Activity_6_help extends ActivityBase {
     public Activity_6_help() {
