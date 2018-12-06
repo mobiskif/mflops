@@ -27,6 +27,7 @@
         android:icon="@drawable/redcross_small"
         android:label="@string/app_name"
         android:supportsRtl="false"
+        android:testOnly="true"
         android:theme="@style/AppTheme.Base" >
         <meta-data
             android:name="com.google.android.geo.API_KEY"
